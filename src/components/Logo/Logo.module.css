@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+}
+
+a .logoText {
+  color: #223035;
+  font-family: "PT Serif", serif;
+  font-weight: 700;
+  font-size: 32px;
+  letter-spacing: 2px;
+  line-height: 60px;
+}

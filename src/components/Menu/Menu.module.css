@@ -1,0 +1,74 @@
+.Menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90%;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.Menu li a {
+  padding: 10px 20px;
+  margin: 0 10px;
+  text-decoration: none;
+  color: #223035;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  transition: all 0.2s ease-in-out;
+}
+
+.Menu li a:hover {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.MenuIcon {
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+  color: #223035;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 1.3px;
+  z-index: 1;
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+.Hidden {
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .Menu {
+    width: 320px;
+    height: 100vh;
+
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    flex-direction: column;
+    justify-content: center;
+    display: none;
+
+    transition: all 0.2s ease-in-out;
+  }
+  .Menu li {
+    margin: 20px 0;
+  }
+  .MenuIcon {
+    display: block;
+  }
+  .Active {
+    display: flex;
+  }
+}
+
+#navInput:checked ~ .MenuIcon {
+  /* display: block; */
+  background-color: orange;
+}

@@ -1,0 +1,43 @@
+.transactionWrapper {
+  padding: 30px 40px;
+  width: 45%;
+  min-height: 330px;
+
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0.5px 0.5px 5px 0.5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 40px;
+}
+.transactionHeading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.transactionHeading h3 {
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+.transactionHeading a {
+  text-decoration: none;
+  color: #223035;
+  font-size: 14px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.transactionHeading a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .transactionWrapper {
+    width: 100%;
+    padding: 30px 10px;
+  }
+  .transactionHeading h3 {
+    font-size: 16px;
+  }
+  .transactionHeading a {
+    font-size: 14px;
+  }
+}
